@@ -1,10 +1,3 @@
-# from PIL import Image
-# img = Image.open(r"C:\Users\81905\Desktop\pythonで作ったアプリ\python背景処理\DALL·E 2024-05-03 20.36.30 - Create a digital artwork of a cat in a cubist style. The cat should be represented using geometric shapes and fragmented composition, seen from multip.png")
-
-# resized_image = img.resize((480, 360))
-# resized_image.save("resized_image.png")
-
-
 import streamlit as st
 from PIL import Image
 
@@ -53,38 +46,3 @@ if uploaded_file is not None:
             mime='image/png'
         )
 
-
-
-# def main():
-#     st.title("画像リサイザー")
-    
-#     # ユーザーが画像をアップロードできるようにする
-#     uploaded_file = st.file_uploader("画像をアップロードしてください", type=['png', 'jpg', 'jpeg'])
-
-#     if uploaded_file is not None:
-#         # PILを使用して画像を開く
-#         img = Image.open(uploaded_file)
-        
-#         # オリジナル画像を表示
-#         st.image(img, caption='オリジナル画像', use_column_width=True)
-
-#         # 画像をリサイズ
-#         resized_image = img.resize((480, 360))
-
-#         # リサイズした画像を表示
-#         st.image(resized_image, caption='リサイズ後の画像', use_column_width=True)
-
-#         # リサイズした画像を保存（オプションで実行）
-#         if st.button("画像を保存"):
-#             resized_image.save("resized_image.png")
-#             with open('resized_imaged_png', "rb") as file:
-#                 btn = st.download_button(
-#                 label='Download Image',
-#                 data=file,
-#                 file_name='resized_image.png',
-#                 mime='image/png'
-#         )
-
-
-# if __name__ == "__main__":
-#     main()
